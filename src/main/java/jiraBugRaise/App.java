@@ -16,11 +16,12 @@ import com.atlassian.jira.rest.client.api.domain.input.IssueInputBuilder;
 import com.atlassian.jira.rest.client.auth.BasicHttpAuthenticationHandler;
 import com.atlassian.jira.rest.client.internal.async.AsynchronousJiraRestClientFactory;
 
-import config.Constants;
-import util.PropertyLoader;
+import jiraBugRaise.config.Constants;
+import jiraBugRaise.util.PropertyLoader;
 
-public class Test {
 
+public class App 
+{
 	public static void main(String[] args) {
 		URI jiraServerUri = URI.create(PropertyLoader.getProperty(Constants.JIRA_URL));
 		AsynchronousJiraRestClientFactory factory = new AsynchronousJiraRestClientFactory();
@@ -61,6 +62,8 @@ public class Test {
 				e.printStackTrace();
 			}
 		}
+		
+		
 	}
-
+	
 }

@@ -1,4 +1,4 @@
-package config;
+package jiraBugRaise.config;
 
 public interface Constants {
 
@@ -8,4 +8,7 @@ public interface Constants {
 	public String JIRA_USER="jiraUser";
 	public String JIRA_PASSWORD="jiraPassword";
 	public String JIRA_ASSIGNE="jiraAssigne";
+	
+	
+
 }
